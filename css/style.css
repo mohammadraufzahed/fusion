@@ -1,26 +1,32 @@
 /*Fonts*/
-@font-face{
+@font-face {
     font-family: "Merriweather Light";
     src: url('../fonts/Merriweather-Light.ttf');
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
 }
-#main-container{
+body{
+    direction: ltr;
+}
+#main-container {
     display: flex;
     flex-direction: column;
 }
-.vl{
+
+.vl {
     border-left: 2px solid #f7ac53;
 }
+
 /*introduce container style*/
-#introduce-container{
+#introduce-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/introduce-container/background.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/introduce-container/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -29,38 +35,98 @@
     color: white;
     font-size: 3rem;
 }
-#company-name{
+
+#company-name {
     color: #f7ac53;
 }
-#introduce-description{
+
+#introduce-description {
     text-align: center;
     width: 45rem;
     border: 2px solid #262626;
     padding: 3rem 1rem;
 }
-#introduce-services{
+
+#introduce-services {
     padding-top: 1rem;
     font-size: 0.9rem;
 }
-#introduce-services span{
+
+#introduce-services span {
     padding-right: 1rem;
 }
-#introduce-services i{
+
+#introduce-services i {
     padding-right: 1rem;
 }
-#fusion-logo{
+
+#fusion-logo {
     position: absolute;
     bottom: 2rem;
     left: 3.5rem;
     margin-bottom: 0px;
 }
-#get-in-touch{
+
+#get-in-touch {
     position: absolute;
     bottom: 2rem;
     right: 3.5rem;
     font-size: 0.8rem;
 }
-#get-in-touch img{
+
+#get-in-touch img {
     width: auto;
+    padding-left: 0.5rem;
+}
+/*Services container style*/
+#services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40rem;
+    background-color: #202020;
+    font-family: "Merriweather Light";
+}
+#services-title{
+    color: #feb960;
+    margin-top: 0.5rem;
+}
+#services-description{
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    width: 45rem;
+    padding-top: 3rem;
+}
+#services-boxes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.service-box-icon{
+    width: max-content;
+}
+.service-box{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 10rem;
+    height: auto;
+}
+.service-box-title{
+    padding-top: 0.5rem;
+    font-size: 2.3rem;
+}
+.service-box-description{
+    color: #bbbbbb;
+    font-size: 0.7rem;
+    padding: 1.3rem 0rem;
+}
+.service-box-sorrow{
     padding-left: 0.5rem;
 }
