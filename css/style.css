@@ -1,0 +1,66 @@
+/*Fonts*/
+@font-face{
+    font-family: "Merriweather Light";
+    src: url('../fonts/Merriweather-Light.ttf');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+}
+.vl{
+    border-left: 2px solid #f7ac53;
+}
+/*introduce container style*/
+#introduce-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/introduce-container/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50.2rem;
+    font-family: "Merriweather Light";
+    color: white;
+    font-size: 3rem;
+}
+#company-name{
+    color: #f7ac53;
+}
+#introduce-description{
+    text-align: center;
+    width: 45rem;
+    border: 2px solid #262626;
+    padding: 3rem 1rem;
+}
+#introduce-services{
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+#introduce-services span{
+    padding-right: 1rem;
+}
+#introduce-services i{
+    padding-right: 1rem;
+}
+#fusion-logo{
+    position: absolute;
+    bottom: 2rem;
+    left: 3.5rem;
+    margin-bottom: 0px;
+}
+#get-in-touch{
+    position: absolute;
+    bottom: 2rem;
+    right: 3.5rem;
+    font-size: 0.8rem;
+}
+#get-in-touch img{
+    width: auto;
+    padding-left: 0.5rem;
+}
