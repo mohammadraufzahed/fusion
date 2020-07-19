@@ -130,3 +130,56 @@ body{
 .service-box-sorrow{
     padding-left: 0.5rem;
 }
+/*Portfolio container*/
+#portfolio-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Merriweather Light";
+    width: 100%;
+    height: 45rem;
+    background-color: #181818;
+    color: white;
+}
+#portfolio-cat{
+    font-size: 9pt;
+    color: #feb960;
+}
+#portfolio-title{
+    font-weight: lighter;
+    font-size: 35pt;
+}
+#portfolio-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 3;
+    margin-right: -5.5rem;
+    margin-top: -23rem;
+}
+#portfolio-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+#portfolio-details{
+    z-index: 3;
+    margin-bottom: -26.2rem;
+    margin-left: 1rem;
+}
+#portfolio-lines{
+    position: relative;
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+
+}
+#portfolio-lines hr{
+    width: 5rem;
+}
