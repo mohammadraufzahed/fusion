@@ -242,9 +242,11 @@ body {
     justify-content: space-evenly;
     margin-top: 4rem;
 }
-#customers-icon img{
+
+#customers-icon img {
     filter: grayscale(100%);
 }
+
 #customers-comment {
     display: flex;
     flex-direction: column;
@@ -301,4 +303,54 @@ body {
     font-size: 11pt;
     text-align: center;
     width: 41rem;
+}
+/*Team container style*/
+#team-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+    background-color: #181818;
+    color: white;
+    font-family: "Merriweather Light";
+}
+#team-header{
+    font-size: 9pt;
+    color: #feb960;
+    padding: 1.5rem 0rem;
+}
+#team-description{
+    font-size: 27pt;
+}
+#team-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3rem;
+}
+.rb{
+    border-right: 1px solid #1c1c1c;
+    width: 0rem;
+}
+.db{
+    border-bottom: 1px solid #1c1c1c;
+}
+.team-boxs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+} 
+.team-profile{
+    width: 6rem;
+}
+.team-name{
+    color: #feb960;
+    font-size: 9pt;
+}
+.team-skill{
+    font-size: 8pt;
 }
