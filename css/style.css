@@ -8,9 +8,11 @@
     box-sizing: border-box;
     margin: 0;
 }
-body{
+
+body {
     direction: ltr;
 }
+
 #main-container {
     display: flex;
     flex-direction: column;
@@ -78,8 +80,9 @@ body{
     width: auto;
     padding-left: 0.5rem;
 }
+
 /*Services container style*/
-#services-container{
+#services-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,18 +91,21 @@ body{
     background-color: #202020;
     font-family: "Merriweather Light";
 }
-#services-title{
+
+#services-title {
     color: #feb960;
     margin-top: 0.5rem;
 }
-#services-description{
+
+#services-description {
     color: white;
     font-size: 2.8rem;
     text-align: center;
     width: 45rem;
     padding-top: 3rem;
 }
-#services-boxes{
+
+#services-boxes {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -108,30 +114,36 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
-.service-box-icon{
+
+.service-box-icon {
     width: max-content;
 }
-.service-box{
+
+.service-box {
     display: flex;
     flex-direction: column;
     color: white;
     width: 10rem;
     height: auto;
 }
-.service-box-title{
+
+.service-box-title {
     padding-top: 0.5rem;
     font-size: 2.3rem;
 }
-.service-box-description{
+
+.service-box-description {
     color: #bbbbbb;
     font-size: 0.7rem;
     padding: 1.3rem 0rem;
 }
-.service-box-sorrow{
+
+.service-box-sorrow {
     padding-left: 0.5rem;
 }
+
 /*Portfolio container*/
-#portfolio-container{
+#portfolio-container {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -143,15 +155,18 @@ body{
     background-color: #181818;
     color: white;
 }
-#portfolio-cat{
+
+#portfolio-cat {
     font-size: 9pt;
     color: #feb960;
 }
-#portfolio-title{
+
+#portfolio-title {
     font-weight: lighter;
     font-size: 35pt;
 }
-#portfolio-name{
+
+#portfolio-name {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -159,18 +174,21 @@ body{
     margin-right: -5.5rem;
     margin-top: -23rem;
 }
-#portfolio-pic{
+
+#portfolio-pic {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
 }
-#portfolio-details{
+
+#portfolio-details {
     z-index: 3;
     margin-bottom: -26.2rem;
     margin-left: 1rem;
 }
-#portfolio-lines{
+
+#portfolio-lines {
     position: relative;
     width: 30rem;
     display: flex;
@@ -180,6 +198,107 @@ body{
     margin-top: 1.5rem;
 
 }
-#portfolio-lines hr{
+
+#portfolio-lines hr {
     width: 5rem;
+}
+
+/*Customers container style*/
+#customers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #202020;
+    color: white;
+    width: 100%;
+    height: max-content;
+}
+
+#customers-header {
+    font-family: "Merriweather Light";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#customers-title {
+    color: #feb960;
+    font-size: 10pt;
+    padding-top: 1rem;
+}
+
+#customers-description {
+    width: 48rem;
+    font-size: 25pt;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+#customers-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+#customers-icon img{
+    filter: grayscale(100%);
+}
+#customers-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    width: max-content;
+}
+
+#customers-comment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50rem;
+    height: 20rem;
+    background-color: #181818;
+    border-radius: 0.4rem;
+    box-shadow: 0px 4px 13px 3px rgba(24, 24, 24, 1);
+}
+
+#customers-comment-vl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+#customers-comment-vl hr {
+    width: 5rem;
+}
+
+#customer-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#customer-name span {
+    color: #feb960;
+}
+
+#customer-name hr {
+    width: 13rem;
+    height: 0rem;
+    border-color: #474747;
+}
+
+#customers-comment-container blockquote {
+    font-size: 11pt;
+    text-align: center;
+    width: 41rem;
 }
