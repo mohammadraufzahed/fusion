@@ -304,8 +304,9 @@ body {
     text-align: center;
     width: 41rem;
 }
+
 /*Team container style*/
-#team-container{
+#team-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,15 +316,18 @@ body {
     color: white;
     font-family: "Merriweather Light";
 }
-#team-header{
+
+#team-header {
     font-size: 9pt;
     color: #feb960;
     padding: 1.5rem 0rem;
 }
-#team-description{
+
+#team-description {
     font-size: 27pt;
 }
-#team-box{
+
+#team-box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -331,26 +335,126 @@ body {
     width: 100%;
     padding-top: 3rem;
 }
-.rb{
+
+.rb {
     border-right: 1px solid #1c1c1c;
     width: 0rem;
 }
-.db{
+
+.db {
     border-bottom: 1px solid #1c1c1c;
 }
-.team-boxs{
+
+.team-boxs {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 10rem;
-} 
-.team-profile{
+}
+
+.team-profile {
     width: 6rem;
 }
-.team-name{
+
+.team-name {
     color: #feb960;
     font-size: 9pt;
+    padding: 1.3rem 0rem;
 }
-.team-skill{
+
+.team-skill {
     font-size: 8pt;
+}
+
+/*Contac us container*/
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    background-color: #343434;
+    font-family: "Merriweather Light";
+    color: white;
+}
+
+#contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50rem;
+    height: max-content;
+    text-align: center;
+    background-color: #181818;
+    border-radius: 0.2rem;
+}
+
+#contact-form input {
+    width: 23rem;
+    margin-bottom: 2rem;
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #5c5c5c;
+    color: white;
+}
+#contact-form input:focus{
+    transition: all ease 1s;
+    border-bottom-color: #feb960;
+}
+#contact-footer div {
+    width: 12rem;
+}
+
+#contact-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50rem;
+    justify-content: space-between;
+    padding: 6rem 0rem;
+}
+#company-address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#company-address span{
+    font-size: 9pt;
+}
+#other-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+}
+#other-contact span{
+    font-size: 9pt;
+}
+#contact-form-box {
+    padding: 3rem 0rem;
+}
+#contact-title{
+    color: #feb960;
+    font-size: 8pt;
+}
+#contact-description{
+    font-size: 25pt;
+    padding: 2rem 0rem;
+}
+#contact-submit{
+    background-color: #feb960;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+    border: 0px;
+}
+#contact-submit img{
+    filter: grayscale(100%);
 }
