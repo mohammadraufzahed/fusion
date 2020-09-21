@@ -12,7 +12,9 @@
 body {
     direction: ltr;
 }
-
+.clear{
+    clear: both;
+}
 #main-container {
     display: flex;
     flex-direction: column;
@@ -304,7 +306,10 @@ body {
     text-align: center;
     width: 41rem;
 }
-
+#customers-comment-container img{
+    border-radius: 100%;
+    padding-top: 1rem;
+}
 /*Team container style*/
 #team-container {
     display: flex;
@@ -457,4 +462,450 @@ body {
 }
 #contact-submit img{
     filter: grayscale(100%);
+}
+/*Responsive*/
+@media only screen and (max-width: 1150px){
+    #fusion-logo{
+        bottom: 7rem;
+    }
+    #get-in-touch{
+        bottom: 7rem;
+    }
+    #portfolio-name{
+        margin-right: -8.1rem;
+    }
+    #portfolio-cat{
+        font-size: 8pt;
+    }
+    #portfolio-title{
+        font-size: 31pt;
+    }
+    #portfolio-details{
+        margin-bottom: -25.2rem;
+        margin-left: -1.7;
+    }
+}
+@media only screen and (max-width: 1090px){
+    #portfolio-pic img{
+        width: 84%;
+    }
+    #portfolio-name{
+        margin-right: -8.4rem;
+    }
+    #portfolio-title{
+        font-size: 28pt;
+    }
+    #portfolio-details{
+        margin-bottom: -19.2rem;
+        margin-left: -2.9rem;
+    }
+    #portfolio-lines{
+        width: 26rem;
+    }
+    #portfolio-lines hr{
+        width: 4rem;
+    }
+    #customers-comment-vl{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 990px){
+    #introduce-description{
+        width: 38rem;
+        padding: 2rem .4rem;
+        font-size: 3rem;
+    }
+    #introduce-services{
+        padding-top: 2rem;
+        font-size: .8rem;
+    }
+    #services-description{
+        font-size: 2.4rem;
+    }
+    .service-box{
+        width: 8rem;
+    }
+    .service-box-title{
+        padding-top: 1.3rem;
+        font-size: 1.7rem;
+    }
+    .service-box-description{
+        font-size: .6rem;
+        padding: 1rem 0rem;
+    }
+    .services-details{
+        font-size: .7rem;
+    }
+    #portfolio-name{
+        margin-right: -7.9rem;
+    }
+    #portfolio-title{
+        font-size: 19pt;
+    }
+    #portfolio-pic img{
+        width: 80%;
+    }
+    #portfolio-details{
+        margin-bottom: -17.5rem;
+        margin-left: -3.9rem;
+    }
+    #portfolio-details span{
+        font-size: .8rem;
+    }
+    #customers-description{
+        font-size: 2.4rem;
+    }
+    #customers-icon{
+        width: 93%;
+    }
+    #customers-comment-container{
+        width: 48rem;
+    }
+    #team-container{
+        height: 35rem;
+    }
+    #team-description{
+        font-size: 2.4rem;
+    }
+    #contact-description{
+        font-size: 2.4rem;
+        padding: 3rem 0rem;
+    }
+    #contact-form-box input {
+        width: 22rem;
+        padding: .6rem 0;
+        margin-right: 2rem;
+    }
+}
+@media only screen and (max-width: 880px){
+    #introduce-container{
+        height: 44.2rem;
+    }
+    #fusion-logo{
+        margin-bottom: 2rem;
+    }
+    #get-in-touch{
+        margin-bottom: 2rem;
+    }
+    #portfolio-pic img{
+        width: 70%;
+    }
+    #portfolio-lines{
+        width: 23rem;
+    }
+    #portfolio-lines hr{
+        width: 3rem;
+    }
+    #portfolio-name{
+        margin-right: -9.7rem;
+    }
+    #portfolio-cat{
+        font-size: 6pt;
+    }
+    #portfolio-title{
+        font-size: 14pt;
+    }
+    #portfolio-details{
+        margin-bottom: -14rem;
+        margin-left: -6.5rem;
+    }
+    #customers-comment-container{
+        width: 44rem;
+    }
+    #team-container{
+        height: max-content;
+    }
+    #team-box{
+        flex-wrap: wrap;
+    }
+    .team-boxs{
+        flex: 0 50%;
+        padding: 2rem 0rem;
+    }
+}
+@media only screen and (max-width: 810px){
+    #introduce-description{
+        width: 33rem;
+        padding: 1rem .3rem;
+        font-size: 2.6rem;
+    }
+    #portfolio-pic img{
+        width: 65%;
+    }
+    #portfolio-name{
+        margin-right: -11.7rem;
+        margin-top: -16rem;
+    }
+    #portfolio-details{
+        margin-bottom: -12rem;
+        margin-left: -7.5rem;
+    }
+    #contact-form{
+        width: 40rem;
+    }
+    #contact-form-box input{
+        width: 14rem;
+    }
+    #contact-form-box input:nth-child(5) {
+        width: 30rem !important;
+    }
+    #contact-footer{
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width: 725px){
+    #introduce-description {
+        font-size: 2.2rem;
+    }
+    #introduce-services{
+        font-size: .7rem;
+    }
+    #fusion-logo {
+        margin-bottom: 9rem;
+    }
+    #get-in-touch {
+        margin-bottom: 9.5rem;
+    }
+    #services-description{
+        width: 33rem;
+        font-size: 2rem;
+    }
+    #portfolio-container{
+        flex-direction: column;
+        height: 28rem;
+        justify-content: space-evenly;
+    }
+    #portfolio-container .vl {
+        display: none;
+    }
+    #portfolio-name{
+        margin-top: 0;
+        margin-right: -16.7rem;
+    }
+    #portfolio-pic{
+        flex-direction: row;
+        margin-left: 26%;
+    }
+    #portfolio-pic img {
+        width: 70%;
+    }
+    #portfolio-lines{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        margin-left: -11rem;
+    }
+    #portfolio-lines hr{
+        transform: rotate(90deg);
+        width: 2rem;
+        margin-left: 2rem;
+    }
+    #portfolio-details {
+        margin-bottom: 0;
+        margin-left: -14rem;
+    }
+    #customers-description {
+        font-size: 1.8rem;
+        width: 32rem;
+    }
+    #customers-icon {
+        width: 100%;
+    }
+    #customers-icon img{
+        width: 4rem;
+    }
+    #customers-comment-container {
+        width: 35rem;
+    }
+    #customers-comment-container blockquote{
+        width: 30rem;
+        font-size: 10pt;
+    }
+    #team-description {
+        font-size: 2rem;
+    }
+    #contact-form{
+        width: 90%;
+    }
+    #contact-footer{
+        width: 100%;
+    }
+    #contact-description{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 550px){
+    #introduce-description{
+        width: 24rem;
+        padding: 2rem .5rem;
+    }
+    #services-description{
+        width: 24rem;
+        font-size: 1.5rem;
+    }
+    #portfolio-pic img{
+        width: 100%;
+    }
+    #portfolio-pic{
+        margin-left: 21%;
+    }
+    #portfolio-lines{
+        margin-left: -8rem;
+        margin-bottom: 1rem;
+    }
+    #portfolio-lines hr{
+        width: 1.5rem;
+    }
+    #customers-description{
+        font-size: 1.5rem;
+        width: 28rem;
+    }
+    #customers-icon img{
+        width: 3.5rem;
+    }
+    #customers-comment-container{
+        width: 28rem;
+    }
+    #customers-comment-container blockquote{
+        width: 24rem;
+    }
+    #customer-name hr{
+        width: 9rem;
+    }
+    #customers-comment-vl hr {
+        width: 3.5rem;
+    }
+    #contact-description {
+        font-size: 1.8rem;
+    }
+    #contact-form {
+        width: 86%;
+    }
+    #contact-form-box input {
+        width: 11rem;
+        font-size: .7rem;
+    }
+    #contact-form-box input:nth-child(5) {
+        width: 24rem !important;
+    }
+    #contact-footer div {
+        width: 12rem;
+        float: left;
+    }
+    #company-address span:nth-child(1) {
+        font-size: .8rem;
+    }
+}
+@media only screen and (max-width: 490px){
+    .service-box{
+        width: 5rem;
+    }
+    .service-box-title{
+        font-size: 1.4rem;
+    }
+    .service-box-description{
+        font-size: .5rem;
+    }
+    .services-details {
+        font-size: .6rem;
+    }
+    #customers-icon img {
+        width: 3rem;
+    }
+    #customers-comment-container {
+        width: 23rem;
+    }
+    #customers-comment-container blockquote{
+        width: 19rem;
+        font-size: 8pt;
+    }
+    #customer-name hr {
+        width: 6rem;
+    }
+    #customers-comment-vl hr {
+        width: 2.8rem;
+    }
+    #contact-form-box input:nth-child(5) {
+        width: 84% !important;
+    }
+    #contact-form-box input{
+        width: 84%;
+    }
+}
+@media only screen and (max-width: 430px){
+    #introduce-description{
+        font-size: 1.8rem;
+        width: 17rem;
+    }
+    #services-description {
+        width: 20rem;
+        font-size: 2rem;
+    }
+    #customers-description {
+        font-size: 1.4rem;
+        width: 22rem;
+    }
+}
+@media only screen and (max-width: 385px){
+    #services-description {
+        width: 18rem;
+        font-size: 1.5rem;
+    }
+    #customers-comment-container {
+        width: 20rem;
+    }
+    #customers-description {
+        font-size: 1.2rem;
+        width: 17rem;
+    }
+    #customers-icon img {
+        width: 2.4rem;
+    }
+    #customers-comment-container blockquote {
+        width: 19rem;
+        font-size: 8pt;
+    }
+    #customer-name span:nth-child(1){
+        font-size: .7rem;
+    }
+    #customers-comment-vl hr {
+        width: 2rem;
+    }
+    #team-description {
+        font-size: 1.8rem;
+    }
+    #contact-description {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 325px){
+    #portfolio-details {
+        margin-bottom: 0;
+        margin-left: -8rem;
+    }
+    #portfolio-name {
+        margin-top: 0;
+        margin-right: -8.7rem;
+    }
+    #customer-name span:nth-child(1){
+        font-size: .7rem;
+    }
+    #customers-comment-container blockquote {
+        width: 11rem;
+        font-size: 6pt;
+    }
+    #customers-comment-container {
+        width: 15rem;
+    }
+    #customer-name hr {
+        width: 4rem;
+    }
+    #customers-comment-vl hr {
+        width: 1.5rem;
+    }
+    #footer-logo img{
+        width: 2rem;
+    }
+
 }
