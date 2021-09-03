@@ -1,0 +1,25 @@
+#header {
+  background-image: url("../../../resource/img/header/background.png");
+}
+
+.header-title {
+  font-family: "Merriweather";
+  font-weight: bold;
+  font-size: 3rem;
+  border: 2px solid #262626;
+}
+.header-company-name {
+  color: #f7ac53;
+}
+
+#header-service {
+  color: white;
+}
+
+#header-bottom {
+  color: white;
+}
+
+#header-bottom img {
+  width: auto;
+}
