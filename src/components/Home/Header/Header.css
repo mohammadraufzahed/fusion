@@ -20,6 +20,10 @@
   color: white;
 }
 
+#header-bottom span {
+  font-size: 0.8rem;
+}
+
 #header-bottom img {
   width: auto;
 }
