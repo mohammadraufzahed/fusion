@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    direction: ltr;
+}
+.clear{
+    clear: both;
+}
+#main-container {
+    display: flex;
+    flex-direction: column;
+}

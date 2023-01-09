@@ -1,0 +1,780 @@
+@use "./fonts.scss";
+@use "./global.scss";
+@use "./utils.scss";
+@use "./sections/index.scss";
+
+/*Services container style*/
+#services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 40rem;
+  background-color: #202020;
+  font-family: "Merriweather Light";
+}
+
+#services-title {
+  color: #feb960;
+  margin-top: 0.5rem;
+}
+
+#services-description {
+  color: white;
+  font-size: 2.8rem;
+  text-align: center;
+  width: 45rem;
+  padding-top: 3rem;
+}
+
+#services-boxes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.service-box-icon {
+  width: max-content;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 10rem;
+  height: auto;
+}
+
+.service-box-title {
+  padding-top: 0.5rem;
+  font-size: 2.3rem;
+}
+
+.service-box-description {
+  color: #bbbbbb;
+  font-size: 0.7rem;
+  padding: 1.3rem 0rem;
+}
+
+.service-box-sorrow {
+  padding-left: 0.5rem;
+}
+
+/*Portfolio container*/
+#portfolio-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Merriweather Light";
+  width: 100%;
+  height: 45rem;
+  background-color: #181818;
+  color: white;
+}
+
+#portfolio-cat {
+  font-size: 9pt;
+  color: #feb960;
+}
+
+#portfolio-title {
+  font-weight: lighter;
+  font-size: 35pt;
+}
+
+#portfolio-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 3;
+  margin-right: -5.5rem;
+  margin-top: -23rem;
+}
+
+#portfolio-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+#portfolio-details {
+  z-index: 3;
+  margin-bottom: -26.2rem;
+  margin-left: 1rem;
+}
+
+#portfolio-lines {
+  position: relative;
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+#portfolio-lines hr {
+  width: 5rem;
+}
+
+/*Customers container style*/
+#customers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #202020;
+  color: white;
+  width: 100%;
+  height: max-content;
+}
+
+#customers-header {
+  font-family: "Merriweather Light";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#customers-title {
+  color: #feb960;
+  font-size: 10pt;
+  padding-top: 1rem;
+}
+
+#customers-description {
+  width: 48rem;
+  font-size: 25pt;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+#customers-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+#customers-icon img {
+  filter: grayscale(100%);
+}
+
+#customers-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  width: max-content;
+}
+
+#customers-comment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50rem;
+  height: 20rem;
+  background-color: #181818;
+  border-radius: 0.4rem;
+  box-shadow: 0px 4px 13px 3px rgba(24, 24, 24, 1);
+}
+
+#customers-comment-vl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+#customers-comment-vl hr {
+  width: 5rem;
+}
+
+#customer-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#customer-name span {
+  color: #feb960;
+}
+
+#customer-name hr {
+  width: 13rem;
+  height: 0rem;
+  border-color: #474747;
+}
+
+#customers-comment-container blockquote {
+  font-size: 11pt;
+  text-align: center;
+  width: 41rem;
+}
+#customers-comment-container img {
+  border-radius: 100%;
+  padding-top: 1rem;
+}
+/*Team container style*/
+#team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  background-color: #181818;
+  color: white;
+  font-family: "Merriweather Light";
+}
+
+#team-header {
+  font-size: 9pt;
+  color: #feb960;
+  padding: 1.5rem 0rem;
+}
+
+#team-description {
+  font-size: 27pt;
+}
+
+#team-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.rb {
+  border-right: 1px solid #1c1c1c;
+  width: 0rem;
+}
+
+.db {
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.team-boxs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10rem;
+}
+
+.team-profile {
+  width: 6rem;
+}
+
+.team-name {
+  color: #feb960;
+  font-size: 9pt;
+  padding: 1.3rem 0rem;
+}
+
+.team-skill {
+  font-size: 8pt;
+}
+
+/*Contac us container*/
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  background-color: #343434;
+  font-family: "Merriweather Light";
+  color: white;
+}
+
+#contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50rem;
+  height: max-content;
+  text-align: center;
+  background-color: #181818;
+  border-radius: 0.2rem;
+}
+
+#contact-form input {
+  width: 23rem;
+  margin-bottom: 2rem;
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid #5c5c5c;
+  color: white;
+}
+#contact-form input:focus {
+  transition: all ease 1s;
+  border-bottom-color: #feb960;
+}
+#contact-footer div {
+  width: 12rem;
+}
+
+#contact-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50rem;
+  justify-content: space-between;
+  padding: 6rem 0rem;
+}
+#company-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#company-address span {
+  font-size: 9pt;
+}
+#other-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: max-content;
+}
+#other-contact span {
+  font-size: 9pt;
+}
+#contact-form-box {
+  padding: 3rem 0rem;
+}
+#contact-title {
+  color: #feb960;
+  font-size: 8pt;
+}
+#contact-description {
+  font-size: 25pt;
+  padding: 2rem 0rem;
+}
+#contact-submit {
+  background-color: #feb960;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.2rem;
+  border: 0px;
+}
+#contact-submit img {
+  filter: grayscale(100%);
+}
+/*Responsive*/
+@media only screen and (max-width: 1150px) {
+  #portfolio-name {
+    margin-right: -8.1rem;
+  }
+  #portfolio-cat {
+    font-size: 8pt;
+  }
+  #portfolio-title {
+    font-size: 31pt;
+  }
+  #portfolio-details {
+    margin-bottom: -25.2rem;
+    margin-left: -1.7;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  #portfolio-pic img {
+    width: 84%;
+  }
+  #portfolio-name {
+    margin-right: -8.4rem;
+  }
+  #portfolio-title {
+    font-size: 28pt;
+  }
+  #portfolio-details {
+    margin-bottom: -19.2rem;
+    margin-left: -2.9rem;
+  }
+  #portfolio-lines {
+    width: 26rem;
+  }
+  #portfolio-lines hr {
+    width: 4rem;
+  }
+  #customers-comment-vl {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #services-description {
+    font-size: 2.4rem;
+  }
+  .service-box {
+    width: 8rem;
+  }
+  .service-box-title {
+    padding-top: 1.3rem;
+    font-size: 1.7rem;
+  }
+  .service-box-description {
+    font-size: 0.6rem;
+    padding: 1rem 0rem;
+  }
+  .services-details {
+    font-size: 0.7rem;
+  }
+  #portfolio-name {
+    margin-right: -7.9rem;
+  }
+  #portfolio-title {
+    font-size: 19pt;
+  }
+  #portfolio-pic img {
+    width: 80%;
+  }
+  #portfolio-details {
+    margin-bottom: -17.5rem;
+    margin-left: -3.9rem;
+  }
+  #portfolio-details span {
+    font-size: 0.8rem;
+  }
+  #customers-description {
+    font-size: 2.4rem;
+  }
+  #customers-icon {
+    width: 93%;
+  }
+  #customers-comment-container {
+    width: 48rem;
+  }
+  #team-container {
+    height: 35rem;
+  }
+  #team-description {
+    font-size: 2.4rem;
+  }
+  #contact-description {
+    font-size: 2.4rem;
+    padding: 3rem 0rem;
+  }
+  #contact-form-box input {
+    width: 22rem;
+    padding: 0.6rem 0;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 880px) {
+  #portfolio-pic img {
+    width: 70%;
+  }
+  #portfolio-lines {
+    width: 23rem;
+  }
+  #portfolio-lines hr {
+    width: 3rem;
+  }
+  #portfolio-name {
+    margin-right: -9.7rem;
+  }
+  #portfolio-cat {
+    font-size: 6pt;
+  }
+  #portfolio-title {
+    font-size: 14pt;
+  }
+  #portfolio-details {
+    margin-bottom: -14rem;
+    margin-left: -6.5rem;
+  }
+  #customers-comment-container {
+    width: 44rem;
+  }
+  #team-container {
+    height: max-content;
+  }
+  #team-box {
+    flex-wrap: wrap;
+  }
+  .team-boxs {
+    flex: 0 50%;
+    padding: 2rem 0rem;
+  }
+}
+@media only screen and (max-width: 810px) {
+  #portfolio-pic img {
+    width: 65%;
+  }
+  #portfolio-name {
+    margin-right: -11.7rem;
+    margin-top: -16rem;
+  }
+  #portfolio-details {
+    margin-bottom: -12rem;
+    margin-left: -7.5rem;
+  }
+  #contact-form {
+    width: 40rem;
+  }
+  #contact-form-box input {
+    width: 14rem;
+  }
+  #contact-form-box input:nth-child(5) {
+    width: 30rem !important;
+  }
+  #contact-footer {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 725px) {
+  #services-description {
+    width: 33rem;
+    font-size: 2rem;
+  }
+  #portfolio-container {
+    flex-direction: column;
+    height: 28rem;
+    justify-content: space-evenly;
+  }
+  #portfolio-container .vl {
+    display: none;
+  }
+  #portfolio-name {
+    margin-top: 0;
+    margin-right: -16.7rem;
+  }
+  #portfolio-pic {
+    flex-direction: row;
+    margin-left: 26%;
+  }
+  #portfolio-pic img {
+    width: 70%;
+  }
+  #portfolio-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-left: -11rem;
+  }
+  #portfolio-lines hr {
+    transform: rotate(90deg);
+    width: 2rem;
+    margin-left: 2rem;
+  }
+  #portfolio-details {
+    margin-bottom: 0;
+    margin-left: -14rem;
+  }
+  #customers-description {
+    font-size: 1.8rem;
+    width: 32rem;
+  }
+  #customers-icon {
+    width: 100%;
+  }
+  #customers-icon img {
+    width: 4rem;
+  }
+  #customers-comment-container {
+    width: 35rem;
+  }
+  #customers-comment-container blockquote {
+    width: 30rem;
+    font-size: 10pt;
+  }
+  #team-description {
+    font-size: 2rem;
+  }
+  #contact-form {
+    width: 90%;
+  }
+  #contact-footer {
+    width: 100%;
+  }
+  #contact-description {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #services-description {
+    width: 24rem;
+    font-size: 1.5rem;
+  }
+  #portfolio-pic img {
+    width: 100%;
+  }
+  #portfolio-pic {
+    margin-left: 21%;
+  }
+  #portfolio-lines {
+    margin-left: -8rem;
+    margin-bottom: 1rem;
+  }
+  #portfolio-lines hr {
+    width: 1.5rem;
+  }
+  #customers-description {
+    font-size: 1.5rem;
+    width: 28rem;
+  }
+  #customers-icon img {
+    width: 3.5rem;
+  }
+  #customers-comment-container {
+    width: 28rem;
+  }
+  #customers-comment-container blockquote {
+    width: 24rem;
+  }
+  #customer-name hr {
+    width: 9rem;
+  }
+  #customers-comment-vl hr {
+    width: 3.5rem;
+  }
+  #contact-description {
+    font-size: 1.8rem;
+  }
+  #contact-form {
+    width: 86%;
+  }
+  #contact-form-box input {
+    width: 11rem;
+    font-size: 0.7rem;
+  }
+  #contact-form-box input:nth-child(5) {
+    width: 24rem !important;
+  }
+  #contact-footer div {
+    width: 12rem;
+    float: left;
+  }
+  #company-address span:nth-child(1) {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .service-box {
+    width: 5rem;
+  }
+  .service-box-title {
+    font-size: 1.4rem;
+  }
+  .service-box-description {
+    font-size: 0.5rem;
+  }
+  .services-details {
+    font-size: 0.6rem;
+  }
+  #customers-icon img {
+    width: 3rem;
+  }
+  #customers-comment-container {
+    width: 23rem;
+  }
+  #customers-comment-container blockquote {
+    width: 19rem;
+    font-size: 8pt;
+  }
+  #customer-name hr {
+    width: 6rem;
+  }
+  #customers-comment-vl hr {
+    width: 2.8rem;
+  }
+  #contact-form-box input:nth-child(5) {
+    width: 84% !important;
+  }
+  #contact-form-box input {
+    width: 84%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  #services-description {
+    width: 20rem;
+    font-size: 2rem;
+  }
+  #customers-description {
+    font-size: 1.4rem;
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 385px) {
+  #services-description {
+    width: 18rem;
+    font-size: 1.5rem;
+  }
+  #customers-comment-container {
+    width: 20rem;
+  }
+  #customers-description {
+    font-size: 1.2rem;
+    width: 17rem;
+  }
+  #customers-icon img {
+    width: 2.4rem;
+  }
+  #customers-comment-container blockquote {
+    width: 19rem;
+    font-size: 8pt;
+  }
+  #customer-name span:nth-child(1) {
+    font-size: 0.7rem;
+  }
+  #customers-comment-vl hr {
+    width: 2rem;
+  }
+  #team-description {
+    font-size: 1.8rem;
+  }
+  #contact-description {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 325px) {
+  #portfolio-details {
+    margin-bottom: 0;
+    margin-left: -8rem;
+  }
+  #portfolio-name {
+    margin-top: 0;
+    margin-right: -8.7rem;
+  }
+  #customer-name span:nth-child(1) {
+    font-size: 0.7rem;
+  }
+  #customers-comment-container blockquote {
+    width: 11rem;
+    font-size: 6pt;
+  }
+  #customers-comment-container {
+    width: 15rem;
+  }
+  #customer-name hr {
+    width: 4rem;
+  }
+  #customers-comment-vl hr {
+    width: 1.5rem;
+  }
+  #footer-logo img {
+    width: 2rem;
+  }
+}

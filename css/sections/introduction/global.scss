@@ -1,0 +1,54 @@
+#introduce-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+      rgba($color: #000000, $alpha: 0.7),
+      rgba($color: #000000, $alpha: 0.7)
+    ),
+    url("../images/introduce-container/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50.2rem;
+  font-family: "Merriweather Light";
+  color: white;
+  font-size: 3rem;
+
+  > #introduce-description {
+    text-align: center;
+    width: 45rem;
+    border: 2px solid #262626;
+    padding: 3rem 1rem;
+    > #company-name {
+      color: #f7ac53;
+    }
+  }
+  > #introduce-services {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    > span {
+      padding-right: 1rem;
+    }
+    > i {
+      padding-right: 1rem;
+    }
+  }
+  > #fusion-logo {
+    position: absolute;
+    bottom: 2rem;
+    left: 3.5rem;
+    margin-bottom: 0px;
+  }
+  > #get-in-touch {
+    position: absolute;
+    bottom: 2rem;
+    right: 3.5rem;
+    font-size: 0.8rem;
+    > svg {
+      width: auto;
+      padding-left: 0.5rem;
+    }
+  }
+}
